@@ -1,1 +1,3 @@
-/.vscode
+# Ignore workspace settings
+
+.vscode/
