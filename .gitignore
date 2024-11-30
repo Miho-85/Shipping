@@ -1,3 +1,4 @@
 # Ignore workspace settings
 
 .vscode/
+*.exe

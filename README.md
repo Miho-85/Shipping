@@ -5,7 +5,6 @@ This C++ program calculates the total cost of a package, including shipping fees
 ## Features
 - Calculates total price with shipping, VAT, and import tax.
 - Handles multiple shipping weight categories.
-- Validates user input to ensure it’s positive and numeric.
 - Outputs the final result with proper formatting.
 
 ## Getting Started
@@ -24,17 +23,13 @@ To run this project on your local machine, you need a C++ compiler (e.g., `g++`)
    git clone https://github.com/Miho-85/Shipping.git
    ```
 
-2. Navigate to the project directory:
+2. Navigate to the project directory and compile the C++ code:
    ```bash
-   cd Package-Price-Calculator
+   cd Shipping
+   g++ -o package_calculator shipping.cpp
    ```
 
-3. Compile the C++ code:
-   ```bash
-   g++ -o package_calculator main.cpp
-   ```
-
-4. Run the program:
+3. Run the program:
    ```bash
    ./package_calculator
    ```
@@ -42,5 +37,3 @@ To run this project on your local machine, you need a C++ compiler (e.g., `g++`)
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request if you want to add new features or fix bugs.
-
-## License
