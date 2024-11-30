@@ -21,7 +21,7 @@ To run this project on your local machine, you need a C++ compiler (e.g., `g++`)
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Package-Price-Calculator.git
+   git clone https://github.com/Miho-85/Package-Price-Calculator.git
    ```
 
 2. Navigate to the project directory:
