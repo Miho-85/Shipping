@@ -12,12 +12,12 @@ double importTAX = 0.05;
 
 // Pricing for packages
 
-double kg5 = 5;
-double kg10 = 10;
-double kg15 = 15;
-double kg20 = 20;
-double kg25 = 25;
-double kg25Plus = 30;
+double shipCost5 = 5;
+double shipCost10 = 10;
+double shipCost15 = 15;
+double shipCost20 = 20;
+double shipCost25 = 25;
+double shipCost25Plus = 30;
 // Additional variables
 
 double weight;
@@ -30,21 +30,23 @@ cin >> price;
 cout << "Enter your package weight ";
 cin >> weight;
 
-if(weight <= kg5){
-    shipPrice = kg5;
+if(weight <= 5){
+    shipPrice = shipCost5; // price for packages <= 5kg
 } else if(weight <=10){
-    shipPrice = kg10;
+    shipPrice = shipCost10; // price for packages <= 10kg
 } else if(weight <= 15){
-    shipPrice = kg15;
+    shipPrice = shipCost15; // price for packages <= 15kg
 } else if(weight <= 20){
-    shipPrice = kg20;
+    shipPrice = shipCost20; // price for packages <= 20kg
 } else if(weight <= 25){
-    shipPrice = kg25;
-}else if(weight > 25){
-    shipPrice = kg25Plus;
+    shipPrice = shipCost25; // price for packages <=25kg
+} else {
+    shipPrice = shipCost25Plus; // price of packages 25>
 };
 
-cout << shipPrice;
+double shipping = shipPrice;
+double overall = price + shipping + (price * VAT) + (price * importTAX);
+cout << "Your package price includign shipping and taxes is: " << overall << " $";
 
 
 };
