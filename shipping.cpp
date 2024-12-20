@@ -46,7 +46,7 @@ if(weight <= 5){
 
 double shipping = shipPrice;
 double overall = price + shipping + (price * VAT) + (price * importTAX);
-cout << "Your package price includign shipping and taxes is: " << overall << " $";
+cout << "Your package price including shipping and taxes is: " << overall << " $";
 
 
 };
